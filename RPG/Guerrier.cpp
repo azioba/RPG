@@ -7,6 +7,8 @@ Guerrier::Guerrier() : Personnage("nom")
 }
 
 
+
+
 Guerrier::~Guerrier()
 {
 }
