@@ -7,8 +7,8 @@ class Guerrier :public Personnage
 {
 public:
 	Guerrier();
-	void _doublePoing() const;
-	void _bersek() const;
+	void doublePoing(Personnage &cible) const;
+	void bersek(Personnage &cible);
 
 	~Guerrier();
 

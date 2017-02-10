@@ -5,6 +5,9 @@
 #include"Guerrier.h"
 #include"Arme.h"
 #include"Magicien.h"
+#include<iostream>
+
+using namespace std;
 
 
 
@@ -13,6 +16,23 @@ int main()
 	Magicien Dazzle;
 	Guerrier Sven;
 
-    return 0;
+	Sven.attaquer(Dazzle);
+	Dazzle.bouleDeFeu(Sven);
+	Dazzle.bouleDeGlace(Sven);
+	Dazzle.attaquer(Sven);
+	Sven.boirePotion(40);
+	Sven.bersek(Dazzle);
+	Dazzle.changerArme("Scepter", 40);
+	Dazzle.attaquer(Sven);
+
+	//
+	cout << "Sven" << endl;
+	Sven.afficherEtat();
+	cout << endl << "Dazzle" << endl;
+	Dazzle.afficherEtat();
+
+
+	cin.ignore();
+    return EXIT_SUCCESS;
 }
 

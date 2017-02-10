@@ -7,8 +7,8 @@ class Magicien :public Personnage
 {
 public:
 	Magicien();
-	void _bouleDeFeu() const;
-	void _bouleDeGlace() const;
+	void bouleDeFeu(Personnage &cible);
+	void bouleDeGlace(Personnage &cible);
 	~Magicien();
 
 private:
